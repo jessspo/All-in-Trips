@@ -54,14 +54,21 @@ console.log(timeConverter(0));
     <div className='weather-container'>
          <video src='/videos/video-weather.mp4' autoPlay loop muted />
       <div className='weather-text'>
-      <h1>Weather</h1>
+      <br />
+      <br />
+      <h1>Weather Forecast</h1>
+      <br />
+      <br />
       <h3>Which city do you want to travel to?</h3>
+      <br />
       {/* Input updates userDestination state every time the user types something */}
       <input type="text" value={userDestination} onChange={handleInput}></input>
       {/* Button click sends userDestination as argument to function getCityCoordinates for API call */}
       <button buttonStyle='btn--outline'>
       <button onClick={() => getCityCoordinates(userDestination)}><p>Go!</p></button>
       </button>
+      <br />
+      <br />
       {/* Displaying API results only if user searched at least once */}
       {apiLoaded === true 
         ? <>
