@@ -26,6 +26,18 @@
   font-size: 100px;
 }
 
+.flights-text {
+  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
+}
+
 .weather {
   /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
@@ -43,6 +55,9 @@
   background-repeat: no-repeat;
   color: black;
   text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
 }
 
 .visa {

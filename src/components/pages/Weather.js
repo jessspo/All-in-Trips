@@ -55,11 +55,11 @@ console.log(timeConverter(0));
          <video src='/videos/video-weather.mp4' autoPlay loop muted />
       <div className='weather-text'>
       <h1>Weather</h1>
-      <h3>Which city you wanna check the weather?</h3>
+      <h3>Which city do you want to travel to?</h3>
       {/* Input updates userDestination state every time the user types something */}
       <input type="text" value={userDestination} onChange={handleInput}></input>
       {/* Button click sends userDestination as argument to function getCityCoordinates for API call */}
-      <button onClick={() => getCityCoordinates(userDestination)}>Go!</button>
+      <button onClick={() => getCityCoordinates(userDestination)}><p>Go!</p></button>
       {/* Displaying API results only if user searched at least once */}
       {apiLoaded === true 
         ? <>
@@ -78,7 +78,7 @@ console.log(timeConverter(0));
             <h1>Forecast</h1>
             {weatherData.daily.map((element, index) => 
             <div>
-            <p key={index}>Date: {timeConverter(element.dt)} 
+            <p key={index}><b>Date:</b> {timeConverter(element.dt)} 
             <p> Temp: {element.temp.day}° | Min: {element.temp.min}° | Max: {element.temp.max}°</p></p>
             <p>Sky: {element.weather[0].main}
             {/* {element.weather[0].description} */}
@@ -88,7 +88,8 @@ console.log(timeConverter(0));
                
             )}
           </>
-        : <p>You did not search for anything yet.</p>
+        : 
+        <p></p>
          }
       </div>
     </div>
