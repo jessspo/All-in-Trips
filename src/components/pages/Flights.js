@@ -1,6 +1,14 @@
 import React from 'react';
 import '../../App.css';
 
-export default function Flights() {
-  return <h1 className='flights'>Flights</h1>;
+function Flights() {
+  return (
+      <div className='flights-container'>
+         <video src='/videos/video-flights.mp4' autoPlay loop muted />
+         
+          <h1>Flights</h1>
+      </div>
+  );
 }
+
+export default Flights;

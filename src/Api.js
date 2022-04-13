@@ -1,4 +1,4 @@
-// import React, {useState} from 'react';
+// // import React, {useState} from 'react';
 
 // function Api() {
 //     // states for our data:
@@ -28,7 +28,7 @@
 //       });
 //     }
   
-//     return (
+// //     return (
 //       <div className="App">
 //         <h1>Sandbox API Test</h1>
 //         <h3>Give us a city name and click this button to get the city geo-coordinates</h3>
@@ -46,4 +46,4 @@
 //   }
 
 
-//   export default Api;
+// //   export default Api;

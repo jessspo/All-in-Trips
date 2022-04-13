@@ -35,6 +35,16 @@
   font-size: 100px;
 }
 
+
+.weather-text {
+  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+}
+
 .visa {
   /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
