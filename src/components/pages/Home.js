@@ -1,14 +1,15 @@
 import React from 'react';
 import '../../App.css';
-// import Cards from '../Cards';
+
 import LandingPage from '../LandingPage';
+import Cards from '../Cards';
 // import Footer from '../Footer';
 
 function Home() {
   return (
     <>
       <LandingPage />
-      {/* <Cards /> */}
+      <Cards />
       {/* <Footer /> */}
     </>
   );
