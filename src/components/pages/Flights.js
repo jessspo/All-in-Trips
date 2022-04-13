@@ -11,7 +11,7 @@ function Flights() {
           <br />
 
           <h3>Where are you travelling from?</h3>
-          <button></button>
+          <button onClick={("")}></button>
           <br />
           <br />
           <h3>Where do you want to travel to?</h3>
