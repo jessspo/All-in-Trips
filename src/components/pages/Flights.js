@@ -7,9 +7,7 @@ function Flights() {
          <video src='/videos/video-flights.mp4' autoPlay loop muted />
          <div className='flights-text'>
           <br />
-          <br />
-          <h1>Flights Information</h1>
-          <br />
+          <h1>Flights</h1>
           <br />
 
           <h3>Where are you travelling from?</h3>

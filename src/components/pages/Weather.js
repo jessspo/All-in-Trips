@@ -56,8 +56,7 @@ console.log(timeConverter(0));
       <div className='weather-text'>
       <br />
       <br />
-      <h1>Weather Forecast</h1>
-      <br />
+      <h1>Weather</h1>
       <br />
       <h3>Which city do you want to travel to?</h3>
       <br />

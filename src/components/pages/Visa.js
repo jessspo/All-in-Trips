@@ -9,8 +9,7 @@ export default function Visa() {
     <div className='visa-text'>
     <br />
    <h1>Visa Requirements</h1>
-   <h3><i>All you need to know regarding legal documents</i></h3>
-   <br />
+   {/* <h3><i>All you need to know regarding legal documents</i></h3> */}
    <br />
 
    <h3>Where are you from?</h3>
