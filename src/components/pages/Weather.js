@@ -59,7 +59,9 @@ console.log(timeConverter(0));
       {/* Input updates userDestination state every time the user types something */}
       <input type="text" value={userDestination} onChange={handleInput}></input>
       {/* Button click sends userDestination as argument to function getCityCoordinates for API call */}
+      <button buttonStyle='btn--outline'>
       <button onClick={() => getCityCoordinates(userDestination)}><p>Go!</p></button>
+      </button>
       {/* Displaying API results only if user searched at least once */}
       {apiLoaded === true 
         ? <>
@@ -78,7 +80,7 @@ console.log(timeConverter(0));
             <h1>Forecast</h1>
             {weatherData.daily.map((element, index) => 
             <div>
-            <p key={index}><b>Date:</b> {timeConverter(element.dt)} 
+            <p key={index}> {timeConverter(element.dt)} 
             <p> Temp: {element.temp.day}° | Min: {element.temp.min}° | Max: {element.temp.max}°</p></p>
             <p>Sky: {element.weather[0].main}
             {/* {element.weather[0].description} */}
