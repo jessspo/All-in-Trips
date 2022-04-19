@@ -24,7 +24,6 @@ function App() {
           <Route path='/weather' element={<Weather/>} />
           <Route path='/visa' element={<Visa/>} />
           <Route path='/hotels' element={<Hotels/>} />
-          {/* <Route path='/sign-up' element={<Sign-Up/>} /> */}
         </Routes>
       </Router>
 

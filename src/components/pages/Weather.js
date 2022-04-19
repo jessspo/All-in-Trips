@@ -33,17 +33,17 @@ export default function Weather() {
          setApiLoaded(true);
      });
    });
-   // emptying the input field by resetting the state variable after getting the API results
+   // emptying the input field by reseting the state variable after getting the API results
    setUserDestination("");
  }
 
  function timeConverter(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var time = date + ' ' + month + ' ' + year ;
+  let a = new Date(UNIX_timestamp * 1000);
+  let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  let year = a.getFullYear();
+  let month = months[a.getMonth()];
+  let date = a.getDate();
+  let time = date + ' ' + month + ' ' + year ;
   return time;
 }
 console.log(timeConverter(0));
@@ -71,14 +71,14 @@ console.log(timeConverter(0));
       {/* Displaying API results only if user searched at least once */}
       {apiLoaded === true 
         ? <>
-            <p><b>City:</b> {cityData[0].name} 
+            <p><b>City:</b> <i>{cityData[0].name} </i>
             {/* | <b>Lat:</b> {cityData[0].lat} | <b>Long:</b> {cityData[0].lon} */}
             </p>
-            <p><b>Sky:</b> {weatherData.current.weather[0].main} 
+            <p><b>Sky:</b> <i>{weatherData.current.weather[0].main}</i>
             {/* {weatherData.current.weather[0].description} |  */}
             </p>
             <p>
-            <b>Temperature:</b> {weatherData.current.temp}°</p>
+            <b>Temperature:</b> <i>{weatherData.current.temp}°</i></p>
             <img src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`}
             alt={weatherData.current.weather[0].description}/>
             {/* Mapping over array with weather forecast */}
@@ -87,8 +87,8 @@ console.log(timeConverter(0));
             {weatherData.daily.map((element, index) => 
             <div>
             <p key={index}> {timeConverter(element.dt)} 
-            <p> Temp: {element.temp.day}° | Min: {element.temp.min}° | Max: {element.temp.max}°</p></p>
-            <p>Sky: {element.weather[0].main}
+            <p> Temp: <i>{element.temp.day}°</i> | Min: <i>{element.temp.min}°</i> | Max: <i>{element.temp.max}°</i></p></p>
+            <p>Sky: <i>{element.weather[0].main}</i>
             {/* {element.weather[0].description} */}
             </p>
             <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} />

@@ -17,7 +17,7 @@ export default function Visa() {
    <br />
    <br />
 
-   <h3>Which city do you want to travel to?</h3>
+   <h3>Which country do you want to travel to?</h3>
    <button></button>
    <br />
    <br />

@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../App.css';
 
+
+
+
 function Flights() {
   return (
       <div className='flights-container'>
@@ -14,8 +17,15 @@ function Flights() {
           <button onClick={("")}></button>
           <br />
           <br />
+
+
           <h3>Where do you want to travel to?</h3>
           <button></button>
+          <br />
+          <br />
+
+          <h3>When do you want to go?</h3>
+          <button onClick={("")}></button>
           <br />
           <br />
          </div>
