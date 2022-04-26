@@ -12,7 +12,7 @@ import Hotels from './components/pages/Hotels';
 
 function App() {
 
-
+// JUST A TEST COMMENT FOR GIT PUSH!!!
   
   return (
     <>
