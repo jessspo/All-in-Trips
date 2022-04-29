@@ -50,7 +50,7 @@ console.log(timeConverter(0));
 
 
   return (
-  <div className="App">
+  // <div className="App">
     <div className='weather-container'>
          <video src='/videos/video-weather.mp4' autoPlay loop muted />
       <div className='weather-text'>
@@ -101,7 +101,7 @@ console.log(timeConverter(0));
          }
       </div>
     </div>
-  </div>
+  // </div>
   )
 };
 

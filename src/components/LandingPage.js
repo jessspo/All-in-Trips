@@ -2,13 +2,17 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './LandingPage.css';
+import App from '../App.js';
 
 function LandingPage() {
   return (
     <div className='landing-container'>
       <video src='/videos/video-landing.mp4' autoPlay loop muted />
       <h1>TRAVEL MODE</h1>
-      <p>All you need for a perfect trip</p>
+      <p>Make the search in the boxes:</p>
+      
+
+      
       {/* <div className='landing-btns'>
         <Button
           className='btns'
