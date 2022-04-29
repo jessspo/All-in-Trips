@@ -1,4 +1,3 @@
-// Function to get the geo-coordinates for a city from OpenWeather Geocoding API
 export const getCoordinates = function(cityName) {
   const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${process.env.REACT_APP_WEATHERKEY}`;
 
@@ -9,7 +8,7 @@ export const getCoordinates = function(cityName) {
 }
 
 
-// Function to get weather forecast from OpenWeather OneCall API with geo-coordinates:
+// Function to get weather forecast from OpenWeather API with geo-coordinates:
 export const getWeather = (destinationCoords) => {
 
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${destinationCoords[0].lat}&lon=${destinationCoords[0].lon}&exclude=minutely,hourly&appid=${process.env.REACT_APP_WEATHERKEY}&units=metric`;
@@ -62,9 +61,9 @@ export const getAirport = (coordinates) => {
 
 
 // Function to see available flights from user origin to destination by Tequila Kiwi API:
-export const getFlight = (airportOrigin, airportDestination, dayOfFlight) => {
+export const getFlight = (airportOrigin, airportDestination) => {
 
-  const url = `https://tequila-api.kiwi.com/v2/search?fly_from=${airportOrigin[0].iata}&fly_to=${airportDestination[0].iata}&date_from=${dayOfFlight}&date_to=${dayOfFlight}&flight_type=oneway&one_for_city=0&one_per_date=0&adults=1&selected_cabins=C&mix_with_cabins=M&only_working_days=false&only_weekends=false&partner_market=us&curr=EUR&max_stopovers=2&max_sector_stopovers=2&vehicle_type=aircraft&sort=price&limit=50`
+  const url = `https://tequila-api.kiwi.com/v2/search?fly_from=${airportOrigin[0].iata}&fly_to=${airportDestination[0].iata}&date_from=05%2F05%2F2022&date_to=15%2F05%2F2022&flight_type=oneway&one_for_city=0&one_per_date=0&adults=1&selected_cabins=C&mix_with_cabins=M&only_working_days=false&only_weekends=false&partner_market=us&curr=EUR&max_stopovers=2&max_sector_stopovers=2&vehicle_type=aircraft&sort=price&limit=50`
 
   const options = {
     method: 'GET',

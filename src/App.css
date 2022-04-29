@@ -68,8 +68,8 @@
 
 .home,
 .flights,
-.weather
- {
+.weather,
+.visa {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -120,10 +120,24 @@
   filter: alpha(opacity=60);
 }
 
-.img {
-  max-width:30px;
-  height:auto;
+.visa {
+  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
 
+.visa-text {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
 }
 
 .btn--outline {

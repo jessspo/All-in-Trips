@@ -1,26 +1,37 @@
-import React, { useContext } from 'react';
-import { localTime } from '../../functions/TimestampFunctions';
+import React from 'react';
+import '../../App.css';
 
-import { MyContext } from '../../context/MyProvider';
-import '../../App.css'
 
-const Flights = () => {
-  const context = useContext(MyContext); 
 
-  return(
-      context.flightsResult.map((element, index) => {
-        return(
-          <div className="card" key={index}>
-            <p><b>From:</b> {element.cityFrom} | <b>To:</b> {element.cityTo}</p>
-            <p><b>Line:</b> {element.airlines[0]} <b>Price:</b> {element.price} Euro</p>
-            {/* <p><b>Duration:</b> {timeConverter(element.duration)}</p> */}
-            <p><b>Local Departure:</b> {localTime(element.local_departure)} --- <b>Local Arrival:</b> {localTime(element.local_arrival)}</p>
-            {/* element.distance & element.duration */}
-            <p><b>Price per bag:</b> {element.bags_price["1"]}</p>
-          </div>
-        )
-      })
-  )
+
+function Flights() {
+  return (
+      <div className='flights-container'>
+         <video src='/videos/video-flights.mp4' autoPlay loop muted />
+         <div className='flights-text'>
+          <br />
+          <h1>Flights</h1>
+          <br />
+
+          <h3>Where are you travelling from?</h3>
+          <button onClick={("")}></button>
+          <br />
+          <br />
+
+
+          <h3>Where do you want to travel to?</h3>
+          <button></button>
+          <br />
+          <br />
+
+          <h3>When do you want to go?</h3>
+          <button onClick={("")}></button>
+          <br />
+          <br />
+         </div>
+      </div>
+
+  );
 }
 
 export default Flights;
