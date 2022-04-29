@@ -9,7 +9,6 @@ import Flights from './components/pages/Flights';
 import Hotels from './components/pages/Hotels';
 import Button from './components/Button';
 import LandingPage from './components/LandingPage';
-
 import MyProvider from './context/MyProvider';
 
 
@@ -86,19 +85,14 @@ const getCityInfo = (event) => {
     return time;
   }
 
-
-
-
-
   return (
    
     <>
 
     <div className="App">
-      <Button style='section-btn' action={() => switchDisplay("main")} text="" />
+      <Button style='section-btn' action={() => switchDisplay("main")} text="Search" />
       {context.apiLoaded === true && 
       <>
-    <Navbar />
         <Button style='section-btn' action={() => switchDisplay("weather")} text="Weather" />    
         <Button style='section-btn' action={() => switchDisplay("flights")} text="Flights" />
         <Button style='section-btn' action={() => switchDisplay("hotels")} text="Hotels" />
