@@ -9,7 +9,6 @@ import Flights from './components/pages/Flights';
 import Hotels from './components/pages/Hotels';
 import Button from './components/Button';
 import LandingPage from './components/LandingPage';
-
 import MyProvider from './context/MyProvider';
 
 
@@ -85,10 +84,6 @@ const getCityInfo = (event) => {
     //[year] + ' ' + hour + ':' + min + ':' + sec 
     return time;
   }
-
-
-
-
 
   return (
    
