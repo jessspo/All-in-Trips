@@ -104,16 +104,18 @@ const getCityInfo = (event) => {
 
         <br />
         <form onSubmit={getCityInfo}>
+          <div className='boxes'>
           <input type="text" value={context.userOrigin} onChange={handleInput} placeholder="From..." id="from" required />
           {/* Input updates userDestination state every time the user types something */}
           <input type="text" value={context.userDestination} onChange={handleInput} placeholder="To..." id="to" required />
           <input type="date" value={context.travelDate} onChange={handleDate} id="checkin" />
           <input type="date" value={context.checkoutDate} onChange={handleDate} id="checkout" />
+          </div>
           {/* Button click sends userDestination as argument to function getCityInfo for API call */}
-          <Button text="Go!" />
+          <Button style='section-btn' text="Go!" />
           <br />
           <br />
-          
+        
         </form>
         {/* Displaying API results only if user searched at least once */}
         {context.apiLoaded === true &&

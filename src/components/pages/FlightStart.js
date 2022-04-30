@@ -11,7 +11,6 @@ const FlightStart = () => {
 
 
   return (
-      
       <div className='flights-container'>
          <video src='/videos/video-flights.mp4' autoPlay loop muted />
          <div className='flights-text'>

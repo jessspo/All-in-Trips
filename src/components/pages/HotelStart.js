@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { MyContext } from '../../context/MyProvider';
 import '../../App.css';
 
+
 // state for hotels and loaded
 
 
@@ -55,6 +56,7 @@ const HotelStart = function() {
       : <p></p>
       }
       <br />
+         
          <h3>Where do you want to go?</h3>
 
          <br />

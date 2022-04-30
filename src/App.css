@@ -56,6 +56,7 @@
   font-size: 30px;
   padding: 10px;
   margin: 30px;
+  cursor: pointer;
 }
 
 .text {
@@ -161,4 +162,19 @@
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
+}
+
+.first {
+  background-color: #eeeef6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input {
+  width: 20%;
+  border: 3px solid #555;
 }
