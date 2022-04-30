@@ -50,12 +50,16 @@
 }
 
 .section-btn {
-  background-color: black;
-  border: solid black 2px;
+  background-color: rgb(18, 18, 18);
+  border: solid rgb(28, 26, 26) 2px;
   color: white;
-  font-size: 36px;
+  font-size: 30px;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
+}
+
+.text {
+ font-size: 30px;
 }
 
 .card {
@@ -68,7 +72,8 @@
 
 .home,
 .flights,
-.weather
+.weather,
+.hotel
  {
   display: flex;
   height: 90vh;
@@ -120,9 +125,33 @@
   filter: alpha(opacity=60);
 }
 
+.hotel-container {
+    /* background-image: url('/images/img-1.jpg'); */
+    background-position: center;
+    /* background-size: fill; */
+    /* background-repeat: no-repeat; */
+    color: #fff;
+    background-color: ;
+    /* font-size: 100px; */
+
+}
+
+.hotel-text {
+    /* background-image: url('/images/img-1.jpg'); */
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    opacity: 0.6;
+    background-color: #ffffff;
+    filter: alpha(opacity=60);
+}
+
 .img {
-  max-width:30px;
+  max-width:5px;
   height:auto;
+  size-adjust: 30%;
 
 }
 

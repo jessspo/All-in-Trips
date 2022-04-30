@@ -11,6 +11,9 @@ import Flights from './components/pages/Flights';
 import Hotels from './components/pages/Hotels';
 import Button from './components/Button';
 import LandingPage from './components/LandingPage';
+import WeatherStart from './components/pages/WeatherStart';
+import FlightStart from './components/pages/FlightStart';
+import HotelStart from './components/pages/HotelStart';
 
 function App() {
   const context = useContext(MyContext);
@@ -92,9 +95,9 @@ const getCityInfo = (event) => {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home/>} />
-          <Route path='/flights' element={<Flights/>} />
-          <Route path='/weather' element={<Weather/>} />
-          <Route path='/hotels' element={<Hotels/>} />
+          <Route path='/flights' element={<FlightStart/>} />
+          <Route path='/weather' element={<WeatherStart/>} />
+          <Route path='/hotels' element={<HotelStart/>} />
         </Routes>
       </Router>
     </> 

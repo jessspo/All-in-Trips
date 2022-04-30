@@ -15,18 +15,13 @@ function Cards() {
                     label='Show me the Weather!'
                     path="/weather"
                     />
-                     <CardItem 
-                    src='images/img-visa1.jpg'
-                    text='Search all legal requirements here'
-                    label='Get your documents ready!'
-                    path="/visa"
-                    />
+    
 
                 </ul>
                 <ul className="cards__items">
                     <CardItem 
                     src='images/img-flight.jpg'
-                    text='Compare the cheapest flights to your dream destination'
+                    text='Compare the cheapest flights to your destination'
                     label='Search flight'
                     path="/flights"
                     />

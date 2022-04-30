@@ -55,6 +55,11 @@ function Navbar() {
                         Hotels  
                         </Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to ='/about-us' className='nav-links' onClick={closeMobileMenu}>
+                        About  
+                        </Link>
+                    </li>
                 </ul>
                
             </div>

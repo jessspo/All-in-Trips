@@ -12,11 +12,13 @@ const Hotels = () => {
           context.hotelData.map((element, index) => {
             return (
               <div className='hotel-container'>
+                  
               {/* <video src='/videos/video-hotel.mp4' autoPlay loop muted /> */}
               <div className='hotel-text'>
+              <h1></h1>
                 <br />
-                <h1>Hotels</h1>
-              <div className="card" key={index}>
+            
+              <div className="" key={index}>
                 <p><b>Hotel name:</b> <i>{element.hotel_name} </i>
                 </p>
                 <div className='img'>

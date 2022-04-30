@@ -4,6 +4,8 @@ import LandingPage from '../LandingPage';
 import Cards from '../Cards';
 import Question from '../../Question';
 // import Footer from '../Footer';
+import Weather from './Weather';
+import Flights from './Flights';
 
 function Home() {
   return (
@@ -12,6 +14,9 @@ function Home() {
 
       <LandingPage />
       <Question />
+      {/* <Weather /> */}
+
+
       <Cards />
       {/* <Footer /> */}
     </>

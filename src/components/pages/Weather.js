@@ -25,8 +25,7 @@ const Weather = () => {
     <>
       {context.apiLoaded === true &&
           <>
-          <div className='App'>
-                <div className='weather-container'>
+                {/* <div className='weather-container'> */}
                    <video src='/videos/video-weather.mp4' autoPlay loop muted />
                 <div className='weather-text'>
                 <br />
@@ -43,15 +42,17 @@ const Weather = () => {
             <h1>Forecast</h1>
             {context.weatherData.daily.map((element, index) => 
                 <div className="card" key={index}>
-            <p>Date: {timeConverter(element.dt)}</p>
+            <p> {timeConverter(element.dt)}</p>
             <p>Temp: {element.temp.day}° | Min: {element.temp.min}° | Max: {element.temp.max}°</p>
             <p>Sky: {element.weather[0].main}, {element.weather[0].description}</p>
             <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} />
               </div>
-               )}
+              )} 
             </div>
-          </div>
-          </div>
+            
+          {/* </div> */}
+          
+
         </>
       }
     </>

@@ -90,7 +90,7 @@ const getCityInfo = (event) => {
     <>
 
     <div className="App">
-      <Button style='section-btn' action={() => switchDisplay("main")} text="Search" />
+      <Button style='section-btn' action={() => switchDisplay("main")} text="Search All" />
       {context.apiLoaded === true && 
       <>
         <Button style='section-btn' action={() => switchDisplay("weather")} text="Weather" />    
@@ -101,8 +101,7 @@ const getCityInfo = (event) => {
        
       {context.currentSection === "main" &&
       <>
-        <h3>Give us a city name and click <i>Go!</i> <br />
-        to get the city geo-coordinates</h3>
+
         <br />
         <form onSubmit={getCityInfo}>
           <input type="text" value={context.userOrigin} onChange={handleInput} placeholder="From..." id="from" required />
