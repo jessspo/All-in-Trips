@@ -86,7 +86,6 @@ const getCityInfo = (event) => {
     return time;
   }
 
-// JUST A TEST COMMENT FOR GIT PUSH!!!
   
   return (
     
