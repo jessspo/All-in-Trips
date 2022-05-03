@@ -50,7 +50,7 @@ console.log(timeConverter(0));
 
   return (
        <div className='weather-container'>
-         <video src='/videos/video-weather.mp4' autoPlay loop muted />
+         <img src='/images/img-weather2.png' autoPlay loop muted />
       <div className='weather-text'>
       <br />
       <br />

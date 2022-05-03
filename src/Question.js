@@ -84,7 +84,7 @@ function Question() {
 
     <div className="App">
       <Button style='section-btn' action={() => switchDisplay("main")} text="Search All" />
-      {context.apiLoaded === false && 
+      {context.apiLoaded === true && 
       <>
         <Button style='section-btn' action={() => switchDisplay("weather")} text="Weather" />    
         <Button style='section-btn' action={() => switchDisplay("flights")} text="Flights" />
