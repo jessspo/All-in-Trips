@@ -50,7 +50,7 @@ console.log(timeConverter(0));
 
   return (
        <div className='weather-container'>
-         <img src='/images/img-weather2.png' autoPlay loop muted />
+         <img className="img-landing" src='/images/img-weather2.png' autoPlay loop muted />
       <div className='weather-text'>
       <br />
       <br />
