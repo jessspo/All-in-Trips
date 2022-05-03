@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Dropdown from './Dropdown';
+import Dropdown from '../Dropdown';
 import { MyContext } from '../../context/MyProvider';
 // import '../App.css'
 
