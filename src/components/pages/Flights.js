@@ -15,7 +15,7 @@ const Flights = () => {
         <p><b>Nr of stopovers:</b> {element.route.length === 1 ? "direct flight" : element.route.length}</p>
         <p><b>Local Departure:</b> {localTime(element.local_departure)} --- <b>Local Arrival:</b> {localTime(element.local_arrival)} </p>
         <p><b>Flight duration:</b> {secondsToHours(element.duration.total)} hours</p>
-        <p><b>Price per bag:</b> {element.bags_price["1"]} EUR</p>
+        <p><b>Price per bag:</b> {Math.round((element.bags_price["1"] * 100) / 100)} EUR</p>
       </div>
     )
   }

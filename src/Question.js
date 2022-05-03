@@ -40,6 +40,7 @@ function Question() {
   const getCityInfo = (event) => {
     // prevent page from reloading after submitting form
     event.preventDefault();
+    context.setApiLoaded(false);
     context.setFormFilled(true);
     // first get geo-coordinates from Geocoding API according to user input
     getCoordinates(context.userDestination)
@@ -110,17 +111,19 @@ function Question() {
         
         </form>
         {/* Displaying API results only if user searched at least once */}
-        {context.apiLoaded === true &&
-        
-        <>
-        <br />
-          <h3>You searched for a trip from {context.userOrigin} to {context.userDestination}</h3>
-          <p>Please check the according sections to see the weather forecast, suitable flights and the best hotels for your travel destination</p>
-        <br />
-        </>
-        
-      }
-       {/* <LandingPage />        */}
+        {context.apiLoaded === true
+          ?
+          (<>
+            <h3>You searched for a trip from {context.userOrigin} to {context.userDestination}</h3>
+            <p>Please check the according sections to see the weather forecast, suitable flights and the best hotels for your travel destination</p>
+          </>)
+          : (context.formFilled && (
+            <img
+              src="https://powerusers.microsoft.com/t5/image/serverpage/image-id/118082i204C32E01666789C?v=v2"
+              alt="loading spinner"
+            />
+          ))
+        }
       </>   
       }
 
