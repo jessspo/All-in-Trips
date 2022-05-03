@@ -12,7 +12,7 @@ function Cards() {
                     <CardItem 
                     src='images/img-weather1.jpg'
                     text='Get the weekly forecast for the desired location'
-                    label='Show me the Weather!'
+                    label='Check the Weather'
                     path="/weather"
                     />
     
@@ -22,7 +22,7 @@ function Cards() {
                     <CardItem 
                     src='images/img-flight.jpg'
                     text='Compare the cheapest flights to your destination'
-                    label='Search flight'
+                    label='Search Flights'
                     path="/flights"
                     />
                     
