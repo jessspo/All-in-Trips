@@ -1,18 +1,14 @@
 import React, {useContext} from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/pages/Home';
 import Weather from './components/pages/Weather';
 import { getCoordinates, getWeather, getHotels, getAirport, getFlight } from './functions/ApiFunctions';
 import { MyContext } from './context/MyProvider';
 import Flights from './components/pages/Flights';
 import Hotels from './components/pages/Hotels';
 import Button from './components/Button';
-import LandingPage from './components/LandingPage';
-import MyProvider from './context/MyProvider';
 
 
-function Question() {
+const Question = () => {
   const context = useContext(MyContext);
 
   // Function to switch which section is displayed on button click
@@ -40,6 +36,7 @@ function Question() {
   const getCityInfo = (event) => {
     // prevent page from reloading after submitting form
     event.preventDefault();
+    // reset apiLoaded state to false again if the user already made a search before
     context.setApiLoaded(false);
     context.setFormFilled(true);
     // first get geo-coordinates from Geocoding API according to user input
@@ -79,9 +76,7 @@ function Question() {
   }
 
   return (
-   
     <>
-
     <div className="App">
       <Button style='section-btn' action={() => switchDisplay("main")} text="Search All" />
       {context.apiLoaded === false && 
@@ -94,7 +89,6 @@ function Question() {
        
       {context.currentSection === "main" &&
       <>
-
         <br />
         <form onSubmit={getCityInfo}>
           {/* <div className='boxes'> */}
@@ -137,6 +131,5 @@ function Question() {
     </>  
   );
 }
-
 
 export default Question;

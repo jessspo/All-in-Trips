@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { localTime, secondsToHours } from '../../functions/TimestampFunctions';
-import Dropdown from '../../components/pages/Dropdown';
+import Dropdown from '../Dropdown';
 import { MyContext } from '../../context/MyProvider';
 import '../../App.css'
 

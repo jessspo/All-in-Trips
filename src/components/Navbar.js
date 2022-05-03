@@ -3,11 +3,9 @@ import {Link} from 'react-router-dom';
 import "./Navbar.css";
 import Question from '../Question';
 
-
-function Navbar() {
+const Navbar = () => {
     const [click, setClick] = useState (false);
     const [button, setButton] = useState(true);
-
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);

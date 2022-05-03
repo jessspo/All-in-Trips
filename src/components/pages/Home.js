@@ -7,16 +7,12 @@ import Question from '../../Question';
 import Weather from './Weather';
 import Flights from './Flights';
 
-function Home() {
+const Home = () => {
   return (
     <>
-
-
       <LandingPage />
       <Question />
       {/* <Weather /> */}
-
-
       <Cards />
       {/* <Footer /> */}
     </>

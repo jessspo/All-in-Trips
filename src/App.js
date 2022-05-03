@@ -1,22 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
 import Home from './components/pages/Home';
-import WeatherStart from './components/pages/WeatherStart';
 import FlightStart from './components/pages/FlightStart';
 import HotelStart from './components/pages/HotelStart';
+import Navbar from './components/Navbar';
 import Question from './Question';
+import WeatherStart from './components/pages/WeatherStart';
 
 function App() {
 
-
-
-
-  
   return (
-    
-    <>
       <Router>
         <Navbar />
         <Routes>
@@ -27,7 +21,6 @@ function App() {
           <Route path='/hotels' element={<HotelStart/>} />
         </Routes>
       </Router>
-    </> 
   );
 }
 
