@@ -9,7 +9,7 @@ const Weather = () => {
   return (
     <div className='App'>
       <div className='weather-container'>
-        <video src='/videos/video-weather.mp4' autoPlay loop muted />
+        {/* <img src='/images/' autoPlay loop muted /> */}
         <div className='weather-text'>
           <h1>Weather</h1>
           <br />
@@ -26,7 +26,7 @@ const Weather = () => {
               <p>Date: {timeConverter(element.dt)}</p>
               <p>Temp: {element.temp.day}° | Min: {element.temp.min}° | Max: {element.temp.max}°</p>
               <p>Sky: {element.weather[0].main}, {element.weather[0].description}</p>
-              <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} />
+              <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} alt="images of clouds" />
             </div>
           )}
         </div>

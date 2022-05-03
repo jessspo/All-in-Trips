@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import '../../App.css';
+import { timeConverter } from '../../functions/TimestampFunctions';
 
- 
-
-export default function WeatherStart() {
+const WeatherStart = () => {
   // states for our data:
  let [cityData, setCityData] = useState({});
  let [weatherData, setWeatherData] = useState({});
@@ -36,21 +35,9 @@ export default function WeatherStart() {
    setUserDestination("");
  }
 
- function timeConverter(UNIX_timestamp){
-  let a = new Date(UNIX_timestamp * 1000);
-  let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  let year = a.getFullYear();
-  let month = months[a.getMonth()];
-  let date = a.getDate();
-  let time = date + ' ' + month + ' ' + year ;
-  return time;
-}
-console.log(timeConverter(0));
-
-
   return (
        <div className='weather-container'>
-         <video src='/videos/video-weather.mp4' autoPlay loop muted />
+         <img className="img-landing" src='/images/img-weather2.png' autoPlay loop muted />
       <div className='weather-text'>
       <br />
       <br />
@@ -99,13 +86,7 @@ console.log(timeConverter(0));
          }
       </div>
     </div>
-
   )
 };
 
-
-
-
-
-
-
+export default WeatherStart;
