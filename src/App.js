@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import WeatherStart from './components/pages/WeatherStart';
 import FlightStart from './components/pages/FlightStart';
 import HotelStart from './components/pages/HotelStart';
+import Question from './Question';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home/>} />
+          <Route path='/question' exact element={<Question/>} />
           <Route path='/flights' element={<FlightStart/>} />
           <Route path='/weather' element={<WeatherStart/>} />
           <Route path='/hotels' element={<HotelStart/>} />

@@ -84,7 +84,7 @@ function Question() {
 
     <div className="App">
       <Button style='section-btn' action={() => switchDisplay("main")} text="Search All" />
-      {context.apiLoaded === true && 
+      {context.apiLoaded === false && 
       <>
         <Button style='section-btn' action={() => switchDisplay("weather")} text="Weather" />    
         <Button style='section-btn' action={() => switchDisplay("flights")} text="Flights" />
@@ -97,13 +97,13 @@ function Question() {
 
         <br />
         <form onSubmit={getCityInfo}>
-          <div className='boxes'>
+          {/* <div className='boxes'> */}
           <input type="text" value={context.userOrigin} onChange={handleInput} placeholder="From..." id="from" required />
           {/* Input updates userDestination state every time the user types something */}
           <input type="text" value={context.userDestination} onChange={handleInput} placeholder="To..." id="to" required />
           <input type="date" value={context.travelDate} onChange={handleDate} id="checkin" />
           <input type="date" value={context.checkoutDate} onChange={handleDate} id="checkout" />
-          </div>
+          {/* </div> */}
           {/* Button click sends userDestination as argument to function getCityInfo for API call */}
           <Button style='section-btn' text="Go!" />
           <br />
@@ -126,12 +126,13 @@ function Question() {
         }
       </>   
       }
-
-      {context.currentSection === "weather" && <Weather />}
-
-      {context.currentSection === "flights" && <Flights /> }
-
-      {context.currentSection === "hotels" && <Hotels />}
+     {context.apiLoaded === true &&
+          <> 
+            {context.currentSection === "weather" && <Weather />}
+            {context.currentSection === "flights" && <Flights />}
+            {context.currentSection === "hotels" && <Hotels />}
+          </>
+        }
     </div>
     </>  
   );
