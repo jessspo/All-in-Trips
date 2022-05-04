@@ -19,8 +19,8 @@ const Flights = () => {
         <p><b><p><i class="fa-solid fa-spinner"></i></p>Nr of stops:</b> <p>{element.route.length === 1 ? "direct flight" : element.route.length - 1}</p></p>
         <p><b><div className='plane-departure'>&#9992;</div> Local Departure:</b> <p>{localTime(element.local_departure)}</p> </p>
         <p><b><div className='plane-arrival'>&#9992;</div>Local Arrival:</b> <p>{localTime(element.local_arrival)}</p> </p>
-        <p><b><div className='clock'>&#128337;</div> Flight duration:</b> <p>{secondsToHours(element.duration.total)} hours</p></p> <br/>
-        <p><b> <p><i class='fa-solid fa-coins'></i></p>Bag price:</b> <p>{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p></p>
+        <p><b><p><i class="fa-solid fa-clock"></i></p> Flight duration:</b> <p>{secondsToHours(element.duration.total)} hours</p></p> <br/>
+        <p><b> <p><i class="fa-solid fa-suitcase"></i></p>Bag price:</b> <p>{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p></p>
       
       </div>
     )
