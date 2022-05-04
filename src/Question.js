@@ -127,11 +127,11 @@ const Question = () => {
 
             <Spinner />
           )) 
-        }
-      </>   
-      }
-    {/* All sections with API results show after the user searched and all API data is available */}
-     {context.apiLoaded === true &&
+               }
+          </>   
+             }
+            {/* All sections with API results show after the user searched and all API data is available */}
+            {context.apiLoaded === true &&
           <> 
             {context.currentSection === "weather" && <Weather />}
             {context.currentSection === "flights" && <Flights />}

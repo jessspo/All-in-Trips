@@ -1,7 +1,8 @@
 input {
   padding: 10px;
+  width: 20%;
+  border: 3px solid #5F939A;
 }
-
 
 .App {
   text-align: center;
@@ -11,13 +12,10 @@ input {
   margin-bottom: -20px;
 }
 
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -107,7 +105,6 @@ input {
   width: auto;  */
   /* max-width: 300px; 
   max-height: 300px; */
-
 }
 
 .card-hotel > img {
@@ -156,7 +153,6 @@ input {
   color: #fff;
   font-size: 100px;
 }
-
 
 .weather-text {
   /* background-image: url('/images/img-1.jpg'); */
@@ -219,11 +215,6 @@ input {
   cursor: pointer;
 }
 
-input {
-  width: 20%;
-  border: 3px solid #5F939A;
-}
-
 .plane {
   size: 50%;
   height: 30%;
@@ -255,7 +246,6 @@ input {
   /* display: flex; */
   /* flex-direction: row; */
   justify-content: center;
-
 }
 
 .text-size {
