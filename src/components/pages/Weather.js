@@ -31,7 +31,10 @@ const Weather = () => {
           )}
         </div>
       </div>
+      <br />
+      <br />
     </div>
+  
   )
 };
 

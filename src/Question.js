@@ -6,6 +6,7 @@ import { MyContext } from './context/MyProvider';
 import Flights from './components/pages/Flights';
 import Hotels from './components/pages/Hotels';
 import Button from './components/Button';
+import Spinner from './components/Spinner';
 
 
 const Question = () => {
@@ -109,17 +110,23 @@ const Question = () => {
           ?
           (<>
             <h3>You searched for a trip from {context.userOrigin} to {context.userDestination}</h3>
-            <p>Please check the according sections to see the weather forecast, suitable flights and the best hotels for your travel destination</p>
+            <p>Please check the according sections to see the weather forecast, suitable flights and the best hotels for your travel destination</p><br/> <br/>
           </>)
           : (context.formFilled && (
-            <img
-              src="https://powerusers.microsoft.com/t5/image/serverpage/image-id/118082i204C32E01666789C?v=v2"
-              alt="loading spinner"
-            />
+
+            <Spinner />
+          
+            // <img
+            //   src="https://powerusers.microsoft.com/t5/image/serverpage/image-id/118082i204C32E01666789C?v=v2"
+            //   alt="loading spinner"
+            // />
           ))
+          
         }
       </>   
+    
       }
+    
      {context.apiLoaded === true &&
           <> 
             {context.currentSection === "weather" && <Weather />}
