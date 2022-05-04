@@ -1,3 +1,8 @@
+input {
+  padding: 10px;
+}
+
+
 .App {
   text-align: center;
   filter: alpha(opacity=60);
@@ -5,6 +10,8 @@
   color: white;
   margin-bottom: -20px;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -58,6 +65,10 @@
   padding: 10px;
   margin: 30px;
   cursor: pointer;
+}
+
+.section-btn:focus {
+  color:#344648;
 }
 
 .text {
@@ -165,7 +176,8 @@
     /* background-size: fill; */
     /* background-repeat: no-repeat; */
     color: #fff;
-    background-color: ;
+    background-color: #5F939A;
+    opacity: ;
     /* font-size: 100px; */
 
 }
@@ -175,10 +187,10 @@
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: black;
+    color: #344648;
     text-align: center;
 
-    background-color: #ffffff;
+    background-color: #b8cfd2;
     filter: alpha(opacity=60);
 }
 

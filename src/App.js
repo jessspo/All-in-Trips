@@ -7,6 +7,7 @@ import HotelStart from './components/pages/HotelStart';
 import Navbar from './components/Navbar';
 import Question from './Question';
 import WeatherStart from './components/pages/WeatherStart';
+import AboutUs from './components/pages/AboutUs';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <Route path='/question' exact element={<Question/>} />
           <Route path='/flights' element={<FlightStart/>} />
           <Route path='/weather' element={<WeatherStart/>} />
-          <Route path='/hotels' element={<HotelStart/>} />
+          <Route path='/about-us' element={<AboutUs/>} />
         </Routes>
       </Router>
   );
