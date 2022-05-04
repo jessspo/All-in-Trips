@@ -20,7 +20,7 @@ const Flights = () => {
         <p><b><p><i className="fa-solid fa-plane-departure"></i></p>Departure:</b> <p>{localTime(element.local_departure)}</p> </p>
         <p><b><p><i className="fa-solid fa-plane-arrival"></i></p>Arrival:</b> <p>{localTime(element.local_arrival)}</p> </p>
         <p><b><p><i className="fa-solid fa-clock"></i></p> Flight duration:</b> <p>{secondsToHours(element.duration.total)} hours</p></p> <br/>
-        <p><b> <p><i class="fa-solid fa-suitcase-rolling"></i></p>Bag price:</b> <p>{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p></p>
+        <p><b> <p><i className="fa-solid fa-suitcase-rolling"></i></p>Bag price:</b> <p>{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p></p>
       
       </div>
     )
