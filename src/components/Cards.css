@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+  }
+
 .cards {
     padding: 4rem;
     background: #fff;
@@ -7,15 +11,12 @@
     width: 100%;
   }
 
-  .cars__wrapper {
+.cars__wrapper {
     display: flex;
   }
 
-  h1 {
-    text-align: center;
-  }
   
-  /*  .cards__container {
+  /* .cards__container {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -23,19 +24,19 @@
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
-  }  */
+  }   */
   
  /*   .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
-  }  */
-  
-  .cards__items {
+  }  
+  */
+.cards__items {
     /* margin-bottom: 24px; */
     margin-right: 90px;
   }
   
-   .cards__item {
+.cards__item {
     display: flex;
     flex: 1;
     /* margin: 0 1rem; */

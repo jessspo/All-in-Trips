@@ -95,6 +95,20 @@ input {
   flex-wrap: wrap;
 }
 
+.card-about-text {
+  border: solid #5F939A 2px;
+  color:  #24464b;
+  margin: 1rem;
+  padding: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .card-hotel {
   border: solid #5F939A 2px;
   margin: 1rem;
@@ -102,10 +116,6 @@ input {
   margin-left: 27%;
   margin-right: 27%;
   object-fit: contain;
-  /* height: auto; 
-  width: auto;  */
-  /* max-width: 300px; 
-  max-height: 300px; */
 }
 
 .card-hotel > img {
@@ -126,7 +136,6 @@ input {
 }
 
 .flights {
-  /* background-image: src='./public/images/img-2.jpg'; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,7 +144,6 @@ input {
 }
 
 .flights-text {
-  /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -147,7 +155,6 @@ input {
 }
 
 .weather {
-  /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -156,7 +163,19 @@ input {
 }
 
 .weather-text {
-  /* background-image: url('/images/img-1.jpg'); */
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
+}
+
+.about-text {
+  color: #24464b;
+  background-color: #5F939A;
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -168,7 +187,6 @@ input {
 }
 
 .hotel-container {
-    /* background-image: url('/images/img-1.jpg'); */
     background-position: center;
     /* background-size: fill; */
     /* background-repeat: no-repeat; */
@@ -180,7 +198,6 @@ input {
 }
 
 .hotel-text {
-    /* background-image: url('/images/img-1.jpg'); */
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -195,7 +212,6 @@ input {
   max-width:5px;
   height:auto;
   size-adjust: 20%;
-
 }
 
 .btn--outline {

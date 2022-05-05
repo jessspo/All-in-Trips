@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../context/MyProvider';
 import CardItem from './CardItem'
 import './Cards.css';
 
+
+
 const Cards = () => {
+    const context = useContext(MyContext);
     return (
       <div className='cards'>
         <div className="cards__container">
@@ -19,9 +23,24 @@ const Cards = () => {
                 <ul className="cards__items">
                   <CardItem 
                     src='images/img-flight.jpg'
-                    text='Compare the cheapest flights to your destination'
+                    text='Compare the cheapest Flights to your destination'
                     label='Search Flights'
-                    path="/flights"
+                    path={context.apiLoaded === true 
+                        ? "/flights"
+                        : "/question"
+                        }
+                  />
+                      
+              </ul>
+              <ul className="cards__items">
+                  <CardItem 
+                    src='images/img-hotel1.png'
+                    text='Compare the best Hotels in your chosen destination'
+                    label='Search Hotels'
+                    path={context.apiLoaded === true 
+                        ? "/hotels"
+                        : "/question"
+                        }
                   />
                       
               </ul>
