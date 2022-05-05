@@ -40,7 +40,7 @@ const Question = () => {
     context.setFormFilled(true);
     // first get geo-coordinates for origin & destination from Geocoding API according to user input
     getCoordinates(context.userOrigin, context.userDestination)
-    .then(([coordsDestination, coordsOrigin]) => {
+    .then(([coordsOrigin, coordsDestination]) => {
       // second, get weather for today and next 7 days from OpenWeather API with the coordinates
       getWeather(coordsDestination)
       .then((dataWeather) => (context.setWeatherData(dataWeather)))
@@ -50,7 +50,7 @@ const Question = () => {
         console.log(dataHotels.result);
         context.setHotelData(dataHotels.result)})
        // fourth, use the geo-coordinates again to search for airport IATA codes
-        getAirports(coordsDestination, coordsOrigin)
+        getAirports(coordsOrigin, coordsDestination)
           .then(([originIata, destIata]) => {
             // fifth, use IATA codes & travel date to search cheap flights
             getFlight(originIata.items, destIata.items, context.travelDate)
