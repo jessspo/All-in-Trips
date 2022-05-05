@@ -1,5 +1,15 @@
+input {
+  padding: 10px;
+  width: 20%;
+  border: 3px solid #5F939A;
+}
+
 .App {
   text-align: center;
+  filter: alpha(opacity=60);
+  background-color: #5F939A;
+  color: white;
+  margin-bottom: -20px;
 }
 
 .App-logo {
@@ -14,7 +24,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  text-align: center;
+  background-color: #5F939A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +46,233 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.section-btn {
+  background-color: #5F939A;
+  border: solid #5F939A 2px;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.section-btn:focus {
+  color:#344648;
+}
+
+.text {
+ font-size: 30px;
+}
+
+.card {
+  border: solid #5F939A 2px;
+  margin: 1rem;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+.card-flight {
+  border: solid #ffff 2px;
+  margin: 1rem;
+  padding: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-about-text {
+  border: solid #5F939A 2px;
+  color:  #24464b;
+  margin: 1rem;
+  padding: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-about-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card-hotel {
+  border: solid #5F939A 2px;
+  margin: 1rem;
+  padding: 10px;
+  margin-left: 27%;
+  margin-right: 27%;
+  object-fit: contain;
+}
+
+.card-hotel > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home,
+.flights,
+.weather,
+.hotel
+ {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.flights {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.flights-text {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
+}
+
+.weather {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.weather-text {
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
+}
+
+.about-text {
+  color: #24464b;
+  background-color: #5F939A;
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+  background-color: #ffffff;
+  filter: alpha(opacity=60);
+}
+
+.hotel-container {
+    background-position: center;
+    /* background-size: fill; */
+    /* background-repeat: no-repeat; */
+    color: #fff;
+    background-color: #5F939A;
+    opacity: ;
+    /* font-size: 100px; */
+
+}
+
+.hotel-text {
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #344648;
+    text-align: center;
+
+    background-color: #b8cfd2;
+    filter: alpha(opacity=60);
+}
+
+.img {
+  max-width:5px;
+  height:auto;
+  size-adjust: 20%;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.first {
+  background-color: #eeeef6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.plane {
+  size: 50%;
+  height: 30%;
+  font-size: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  line-height: 1.2em;
+  /* rotate: 40deg;
+  transform: rotate(40deg); */
+}
+
+.plane-departure {
+  size: 50%;
+  height: 30%;
+  rotate: 40deg;
+  transform: rotate(-40deg);
+  font-size: 30px;
+}
+
+.plane-arrival {
+  size: 50%;
+  height: 30%;
+  rotate: 40deg;
+  transform: rotate(40deg);
+  font-size: 30px;
+}
+
+.inline {
+  /* display: flex; */
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.text-size {
+  font-size: large;
 }
