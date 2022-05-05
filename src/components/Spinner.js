@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { css } from "@emotion/react";
-// import ClipLoader from "react-spinners/ClipLoader";
 import BeatLoader from "react-spinners/BeatLoader";
-import { BarLoader } from "react-spinners";
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -11,9 +9,8 @@ const override = css`
   border-color: white;
 `;
 
-function Spinner() {
+const Spinner = () => {
   let [loading] = useState(true);
-  let [color, setColor] = useState();
 
   return (
     <div className="sweet-loading">
