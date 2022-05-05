@@ -1,14 +1,15 @@
+import ErrorPage from "../components/pages/ErrorPage";
+
 // Template for an API call with fetch
 const fetchApiCall = (url, options) =>
   fetch(url, options)
   .then((response) => {
-    if (response.status !== 200) {
-      return console.log("An error happened!");
+    if (response === undefined) {
+      return <ErrorPage />;
     } else {
      return response.json()
     }
   });
-
 
 // Function to get the geo-coordinates for a city from OpenWeather Geocoding API
 export const getCoordinates = function(origin, destination) {
@@ -21,7 +22,6 @@ export const getCoordinates = function(origin, destination) {
     fetchApiCall(urlDestination)
   ]);
 }
-
 
 // Function to get weather forecast from OpenWeather OneCall API with geo-coordinates:
 export const getWeather = (destinationCoords) => {

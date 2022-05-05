@@ -3,42 +3,34 @@ const AboutUs = () => {
      {/* <div className='App'> */}
         {/* <img src='/images/' autoPlay loop muted /> */}
         <div className='about-text'>
-            <h1>
+            
                 <br/>
                 <div className="card-about-text">
-            
-
-                Arne Rief
-                <br/>
-                <h2>Berlin,</h2>
-                <ul>Linkedin
-                Github
-                </ul>
+                <h1>Arne Rief</h1>
+                <h3></h3>
+                Berlin<p>
+                <p className="card-about-links"><a href= "http://www.linkedin.com"> Linkedin</a></p>
+                <a href= "http://www.linkedin.com"> Github</a></p>
+        
                 </div>
-        
-            </h1>
-            <h1>
                 <br/>
-
-                 <div className="card-about-text">
-        
-
-                Julia Feller
-       
-                </div>
-        
-            </h1>
-            <h1>
-                <br/>
-
                 <div className="card-about-text">
-            
+                <h1>Julia Feller</h1>
 
-                Jessica Povoa
-            
+                <p>Berlin,
+                <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
+                <a href= "http://www.linkedin.com"> Github</a></p>
+        
                 </div>
-                
-            </h1>
+                <br/>
+                <div className="card-about-text">
+                <h1>Jessica Povoa</h1>
+
+                <p>Berlin,
+                <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
+                <a href= "http://www.linkedin.com"> Github</a></p>
+        
+                </div>
          </div>
     {/* </div> */}
     </>
