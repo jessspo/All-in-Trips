@@ -3,10 +3,8 @@ import { MyContext } from '../context/MyProvider';
 import CardItem from './CardItem'
 import './Cards.css';
 
-
-
 const Cards = () => {
-    const context = useContext(MyContext);
+  const context = useContext(MyContext);
     return (
       <div className='cards'>
         <div className="cards__container">

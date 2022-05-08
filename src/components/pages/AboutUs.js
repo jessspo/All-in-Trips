@@ -1,39 +1,28 @@
 const AboutUs = () => {
-    return <>
-     {/* <div className='App'> */}
-        {/* <img src='/images/' autoPlay loop muted /> */}
-        <div className='about-text'>
-            
-                <br/>
-                <div className="card-about-text">
-                <h1>Arne Rief</h1>
-                <h3></h3>
-                Berlin<p>
-                <p className="card-about-links"><a href= "http://www.linkedin.com"> Linkedin</a></p>
-                <a href= "http://www.linkedin.com"> Github</a></p>
-        
-                </div>
-                <br/>
-                <div className="card-about-text">
-                <h1>Julia Feller</h1>
+  return (
+    <section className='about-text'>
+      <div className="card-about-text">
+        <h1>Arne Rief</h1>
+        <h4>Regensburg, Germany</h4>
+        <p className="card-about-links"><a href= "https://www.linkedin.com/in/arne-rief/"> Linkedin</a></p>
+        <a href= "https://github.com/Arrief"> Github</a>
+      </div>
 
-                <p>Berlin,
-                <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
-                <a href= "http://www.linkedin.com"> Github</a></p>
-        
-                </div>
-                <br/>
-                <div className="card-about-text">
-                <h1>Jessica Povoa</h1>
+      <div className="card-about-text">
+        <h1>Julia Feller</h1>
+        <h4>Berlin, Germany</h4>
+        <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
+        <a href= "http://www.linkedin.com"> Github</a>
+      </div>
 
-                <p>Berlin,
-                <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
-                <a href= "http://www.linkedin.com"> Github</a></p>
-        
-                </div>
-         </div>
-    {/* </div> */}
-    </>
+      <div className="card-about-text">
+        <h1>Jessica Povoa</h1>
+        <h4>Berlin, Germany</h4>
+        <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
+        <a href= "http://www.linkedin.com"> Github</a>
+      </div>
+    </section>
+  )
 }
 
 export default AboutUs;

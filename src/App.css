@@ -98,8 +98,8 @@ input {
 .card-about-text {
   border: solid #5F939A 2px;
   color:  #24464b;
-  margin: 1rem;
   padding: 30px;
+  margin-top: 3rem;
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
@@ -200,7 +200,7 @@ input {
     /* background-repeat: no-repeat; */
     color: #fff;
     background-color: #5F939A;
-    opacity: ;
+    /* opacity: ; */
     /* font-size: 100px; */
 
 }
