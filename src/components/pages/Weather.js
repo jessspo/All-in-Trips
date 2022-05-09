@@ -13,8 +13,7 @@ const Weather = () => {
         <p><b>City:</b> {context.userDestination}</p>
         <h3>Current Weather:</h3>
         <p><b>Sky:</b> {context.weatherData.current.weather[0].main}, {context.weatherData.current.weather[0].description} | <b>Temperature:</b> {context.weatherData.current.temp}°</p>
-        <img src={`http://openweathermap.org/img/wn/${context.weatherData.current.weather[0].icon}.png`}
-        alt={context.weatherData.current.weather[0].description}/>
+        <img src={`http://openweathermap.org/img/wn/${context.weatherData.current.weather[0].icon}.png`} alt={context.weatherData.current.weather[0].description}/>
         {/* Mapping over array with weather forecast */}
         <h1>Forecast</h1>
         {context.weatherData.daily.map((element, index) => 

@@ -1,6 +1,8 @@
 const AboutUs = () => {
   return (
     <section className='about-text'>
+      <br />
+      <h1 style={{color: "#24464b"}}>The team behind the project</h1>
       <div className="card-about-text">
         <h1>Arne Rief</h1>
         <h4>Regensburg, Germany</h4>

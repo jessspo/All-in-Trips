@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import Button from '../Button';
 import { getWeather } from '../../functions/ApiFunctions';
 import '../../App.css';
+import '../Button.css'
 import { timeConverter } from '../../functions/TimestampFunctions';
 
 const WeatherStart = () => {
@@ -35,7 +37,7 @@ const WeatherStart = () => {
 
   return (
     <div className='weather-container'>
-      <img className="img-landing" src='/images/img-weather2.png' autoPlay loop muted />
+      <img className="img-landing" src='/images/img-weather2.png' alt="background nature" />
       <div className='weather-text'>
         <br />
         <br />
@@ -46,34 +48,31 @@ const WeatherStart = () => {
         {/* Input updates userDestination state every time the user types something */}
         <input type="text" value={userDestination} onChange={handleInput}></input>
         {/* Button click sends userDestination as argument to function getCityCoordinates for API calls */}
-        <button buttonStyle='btn--outline'>
-        <button onClick={() => getCityCoordinates(userDestination)}><p>Go!</p></button>
-        </button>
+        <Button 
+        style="btn-weather" 
+        action={() => getCityCoordinates(userDestination)}
+        text="Go!"
+        />
         <br />
         <br />
         {/* Displaying API results only if user searched at least once */}
         {apiLoaded === true &&
-          <>
-            <p><b>City:</b> <i>{cityData[0].name} </i>
-            </p>
-            <p><b>Sky:</b> <i>{weatherData.current.weather[0].main}</i>
-            </p>
-            <p>
-            <b>Temperature:</b> <i>{weatherData.current.temp}°</i></p>
-            <img src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`}
-            alt={weatherData.current.weather[0].description}/>
+          <section>
+            <p><b>City:</b> <i>{cityData[0].name} </i></p>
+            <p><b>Sky:</b> <i>{weatherData.current.weather[0].main}</i></p>
+            <p><b>Temperature:</b> <i>{weatherData.current.temp}°</i></p>
+            <img src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`} alt={weatherData.current.weather[0].description}/>
             {/* Mapping over array with weather forecast */}
             <h1>Forecast</h1>
             {weatherData.daily.map((element, index) => 
             <div key={index}>
-            <p> {timeConverter(element.dt)} 
-            <p> Temp: <i>{element.temp.day}°</i> | Min: <i>{element.temp.min}°</i> | Max: <i>{element.temp.max}°</i></p></p>
-            <p>Sky: <i>{element.weather[0].main}</i>
-            </p>
-            <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} />
+              <p> {timeConverter(element.dt)}</p>
+              <p> Temp: <i>{element.temp.day}°C</i> | Min: <i>{element.temp.min}°C</i> | Max: <i>{element.temp.max}°C</i></p>
+              <p>Sky: <i>{element.weather[0].main}</i></p>
+              <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} alt="weather icon"/>
             </div>
             )}
-          </>
+          </section>
         }
       </div>
     </div>

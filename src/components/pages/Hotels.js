@@ -13,23 +13,23 @@ const Hotels = () => {
         <div className='hotel-text'>
           <br />
             <div className="card-hotel">
-              <p> <b className='text-size'>{element.hotel_name} </b>
-              </p>
-              <p> <i>{element.address}, {element.zip} {element.city}</i>
+              <p><b className='text-size'>{element.hotel_name}</b></p>
+              <p><i>{element.address}, {element.zip} {element.city}</i>
               </p>
               <br />
               <img src={element.max_photo_url} alt={element.hotel_name} />
               <br />
-              <br/>
+              <br />
               <p><b>To {element.city} city center:</b> {element.distance_to_cc} miles</p>
               <p><b>Check-In:</b> {element.checkin.from} h</p>
               <p><b>Check-Out:</b> {element.checkout.until} h</p>
               <p>
-              <b>Review Score:</b> &#11088; <i>{element.review_score} / 10 ({element.review_nr} reviews)</i></p>
+              <b>Review Score:</b> &#11088; <i>{element.review_score} / 10 ({element.review_nr} reviews)</i>
+              </p>
+              <p><a href={element.url} target="_blank">Check more details here</a></p>
               <p>
-              <a href={element.url} target="_blank">Check more details here</a></p>
-              <p>
-              <b>Total Price:</b> <i>{element.price_breakdown.gross_price} {element.price_breakdown.currency}</i></p>
+              <b>Total Price:</b> <i>{element.price_breakdown.gross_price} {element.price_breakdown.currency}</i>
+              </p>
             </div>
         </div>
       </div>

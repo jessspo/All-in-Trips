@@ -14,15 +14,35 @@ const Flights = () => {
       <div className="card-flight" key={index}>
         
         <div className='inline'>
-          <p> <b className='text-size'>{element.cityFrom}</b> <div className='plane'>&#9992;</div>  <b className='text-size'>{element.cityTo}</b></p>
+          <b className='text-size'>{element.cityFrom}</b> 
+          <div className='plane'>&#9992;</div>  
+          <b className='text-size'>{element.cityTo}</b>
         </div>
-        <p><b>Airline:</b> <p>{element.airlines[0]} </p></p>
-        <p><b> <p> <i className='fa-solid fa-coins'></i></p>Price:</b> <p>{element.price} &#8364;</p></p>
-        <p><b><p><i className="fa-solid fa-pause"></i></p>Nr of stops:</b> <p>{element.route.length === 1 ? "direct flight" : element.route.length - 1}</p></p>
-        <p><b><p><i className="fa-solid fa-plane-departure"></i></p>Departure:</b> <p>{localTime(element.local_departure)}</p> </p>
-        <p><b><p><i className="fa-solid fa-plane-arrival"></i></p>Arrival:</b> <p>{localTime(element.local_arrival)}</p> </p>
-        <p><b><p><i className="fa-solid fa-clock"></i></p> Flight duration:</b> <p>{secondsToHours(element.duration.total)} hours</p></p> <br/>
-        <p><b> <p><i className="fa-solid fa-suitcase-rolling"></i></p>Bag price:</b> <p>{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p></p>
+        <p><b>Airline:</b> <br />{element.airlines[0]}</p>
+        <div>
+          <b><p><i className='fa-solid fa-coins'></i></p>Price:</b> 
+          <p>{element.price} &#8364;</p>
+        </div>
+        <div>
+          <b><i className="fa-solid fa-pause"></i><br />Nr of stops:</b> 
+          <p>{element.route.length === 1 ? "direct flight" : element.route.length - 1}</p>
+        </div>
+        <div>
+          <p><b><i className="fa-solid fa-plane-departure"></i><br />
+          Departure:</b><br />{localTime(element.local_departure)}</p> 
+        </div>
+        <div>
+          <p><b><i className="fa-solid fa-plane-arrival"></i><br />
+          Arrival:</b><br />{localTime(element.local_arrival)}</p> 
+        </div>
+        <div>
+          <p><b><i className="fa-solid fa-clock"></i><br /> 
+          Flight duration:</b><br />{secondsToHours(element.duration.total)} hours</p>
+        </div>
+        <div>
+          <p><b><i className="fa-solid fa-suitcase-rolling"></i><br />
+          Bag price:</b><br />{Math.round((element.bags_price["1"] * 100) / 100)} &#8364;</p>
+        </div>
 
       </div>
     )
