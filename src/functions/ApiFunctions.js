@@ -13,9 +13,9 @@ const fetchApiCall = (url, options) =>
 
 // Function to get the geo-coordinates for a city from OpenWeather Geocoding API
 export const getCoordinates = function(origin, destination) {
-  const urlOrigin = `http://api.openweathermap.org/geo/1.0/direct?q=${origin}&appid=${process.env.REACT_APP_WEATHERKEY}`;
+  const urlOrigin = `https://api.openweathermap.org/geo/1.0/direct?q=${origin}&appid=${process.env.REACT_APP_WEATHERKEY}`;
 
-  const urlDestination = `http://api.openweathermap.org/geo/1.0/direct?q=${destination}&appid=${process.env.REACT_APP_WEATHERKEY}`;
+  const urlDestination = `https://api.openweathermap.org/geo/1.0/direct?q=${destination}&appid=${process.env.REACT_APP_WEATHERKEY}`;
 
   return Promise.all([
     fetchApiCall(urlOrigin), 
