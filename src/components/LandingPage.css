@@ -28,6 +28,10 @@
   }
   
   .landing-container > p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     margin-top: 8px;
     color: #fff;
     font-size: 32px;
@@ -59,6 +63,14 @@
       font-size: 50px;
       margin-top: -100px;
     }
+  }
+
+  @media screen and (max-width: 485px) {
+    .landing-container > h1 {
+      font-size: 25px;
+      margin-top: -100px;
+    }
+  }
   
     .landing-container > p {
       font-size: 30px;
@@ -72,5 +84,4 @@
     .btn {
       width: 100%;
     }
-  }
   

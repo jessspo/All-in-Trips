@@ -27,6 +27,7 @@ const Flights = () => {
           <b><i className="fa-solid fa-pause"></i><br />Nr of stops:</b> 
           <p>{element.route.length === 1 ? "direct flight" : element.route.length - 1}</p>
         </div>
+        
         <div>
           <p><b><i className="fa-solid fa-plane-departure"></i><br />
           Departure:</b><br />{localTime(element.local_departure)}</p> 

@@ -13,6 +13,7 @@ h1 {
 
 .cards__wrapper {
     display: flex;
+    justify-content: space-evenly;
   }
 
 .cards__items {
@@ -109,6 +110,13 @@ h1 {
   @media only screen and (max-width: 1024px) {
     .cards__item {
       margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 485px) {
+    .cards__wrapper {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
   
