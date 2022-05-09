@@ -3,7 +3,11 @@
 
 ## Introduction
 
-All in Trips is a React-based web app, allowing you to quickly look up the weather, flights and hotels for your next travel destination - all in one place and all with just one search! Several APIs provide detailed data like a weather forecast for the next week, cheap flights from your nearest airport complete with prices, departure time and flight duration, as well as a list of hotels complete with a preview image, user rating and a link to Booking.com. You can also sort the result based on your preferences, for example to see the shortest flight duration or the hotels closest to the city center first. 
+All in Trips is a React-based web app, allowing you to quickly look up the weather, flights and hotels for your next travel destination - all in one place and all with just one search!
+
+Several APIs provide detailed data like a weather forecast for the next week, cheap flights from your nearest airport complete with prices, departure time and flight duration, as well as a list of hotels complete with a preview image, user rating and a link to Booking.com. 
+
+You can also sort the result based on your preferences, for example to see the shortest flight duration or the hotels closest to the city center first.
 
 ## Features
 
@@ -15,7 +19,7 @@ All in Trips is a React-based web app, allowing you to quickly look up the weath
 
 ## Demo
 
-Live demo on Netlify:
+Live demo on Netlify: https://all-in-trips.netlify.app/
 
 ## Installation
 If you want to run the code locally, you have to register on the websites of the API providers, listed below, and request your own API keys. Once you have them, replace the fake values inside the file **.env.sample** with your keys and rename the file into **.env**. 
@@ -44,7 +48,7 @@ After that you can open your terminal, cd into the project directory and run the
 
 ## The team
 
-- Arne Rief(https://github.com/Arrief)
+- Arne Rief (https://github.com/Arrief)
 - Jessica Povoa (www.lembra.tv)
 - Julia Feller (https://github.com/fejul)
 

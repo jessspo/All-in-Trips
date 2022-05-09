@@ -132,10 +132,6 @@ input {
     margin-left: 20%;
     margin-right: 20%;
   }
-
-  /* .flex1, .flex2 {} */
-
-
 }
 
 @media screen and (max-width: 485px) {
@@ -241,7 +237,6 @@ input {
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
-  color: black;
   text-align: center;
   opacity: 0.6;
   background-color: #ffffff;
@@ -249,25 +244,25 @@ input {
 }
 
 .hotel-container {
-    background-position: center;
-    /* background-size: fill; */
-    /* background-repeat: no-repeat; */
-    color: #fff;
-    background-color: #5F939A;
-    /* opacity: ; */
-    /* font-size: 100px; */
+  background-position: center;
+  /* background-size: fill; */
+  /* background-repeat: no-repeat; */
+  color: #fff;
+  background-color: #5F939A;
+  /* opacity: ; */
+  /* font-size: 100px; */
 
 }
 
 .hotel-text {
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #344648;
-    text-align: center;
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #344648;
+  text-align: center;
 
-    background-color: #b8cfd2;
-    filter: alpha(opacity=60);
+  background-color: #b8cfd2;
+  filter: alpha(opacity=60);
 }
 
 .img {
