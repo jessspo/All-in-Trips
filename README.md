@@ -45,6 +45,7 @@ After that you can open your terminal, cd into the project directory and run the
 ## The team
 
 - Jessica Povoa (www.lembra.tv)
+- Julia Feller (https://github.com/fejul)
 
 ## Development
 This project was created in a time span of one month as a part of [Wild Code School's](https://www.wildcodeschool.com/en-GB) web development bootcamp.
