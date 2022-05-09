@@ -44,6 +44,7 @@ After that you can open your terminal, cd into the project directory and run the
 
 ## The team
 
+- Arne Rief(https://github.com/Arrief)
 - Jessica Povoa (www.lembra.tv)
 - Julia Feller (https://github.com/fejul)
 

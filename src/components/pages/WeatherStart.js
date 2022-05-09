@@ -20,7 +20,7 @@ const WeatherStart = () => {
  // Function to get API results for the city from the text input, on button click:
  const getCityCoordinates = function(input) {
    // first get geo-coordinates from Geocoding API according to user input
-   fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${input}&appid=fab801f7e2e8bfaec7313b7ef6c6719a`)
+   fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${input}&appid=fab801f7e2e8bfaec7313b7ef6c6719a`)
    .then((response) => response.json())
    .then((coords) => {
      setCityData(coords);
@@ -61,7 +61,7 @@ const WeatherStart = () => {
             <p><b>City:</b> <i>{cityData[0].name} </i></p>
             <p><b>Sky:</b> <i>{weatherData.current.weather[0].main}</i></p>
             <p><b>Temperature:</b> <i>{weatherData.current.temp}°</i></p>
-            <img src={`http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`} alt={weatherData.current.weather[0].description}/>
+            <img src={`https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`} alt={weatherData.current.weather[0].description}/>
             {/* Mapping over array with weather forecast */}
             <h1>Forecast</h1>
             {weatherData.daily.map((element, index) => 
@@ -69,7 +69,7 @@ const WeatherStart = () => {
               <p> {timeConverter(element.dt)}</p>
               <p> Temp: <i>{element.temp.day}°C</i> | Min: <i>{element.temp.min}°C</i> | Max: <i>{element.temp.max}°C</i></p>
               <p>Sky: <i>{element.weather[0].main}</i></p>
-              <img src={`http://openweathermap.org/img/wn/${element.weather[0].icon}.png`} alt="weather icon"/>
+              <img src={`https://openweathermap.org/img/wn/${element.weather[0].icon}.png`} alt="weather icon"/>
             </div>
             )}
           </section>
