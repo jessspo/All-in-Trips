@@ -20,8 +20,8 @@ const AboutUs = () => {
       <div className="card-about-text">
         <h1>Jessica Povoa</h1>
         <h4>Berlin, Germany</h4>
-        <p><a href= "http://www.linkedin.com"> Linkedin</a></p>
-        <a href= "http://www.linkedin.com"> Github</a>
+        <p><a href= "http://www.linkedin.com/in/jessspo"> Linkedin</a></p>
+        <a href= "https://github.com/jessspo/"> Github</a>
       </div>
     </section>
   )
