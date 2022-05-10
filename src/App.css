@@ -89,8 +89,8 @@ input {
   border: solid #ffff 2px;
   margin: 1rem;
   padding: 30px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 960px) {
@@ -108,8 +108,8 @@ input {
     border: solid #ffff 2px;
     margin: 1rem;
     padding: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -126,18 +126,42 @@ input {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+    place-items: center;
     border: solid #ffff 2px;
     margin: 1rem;
     padding: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card-hotel {
+   margin-left: -20%;
+   margin-right: -20%;
+  }
+
+  .hotel-container {
+    margin-left: -30%;
+    margin-right: -30%;
   }
 }
 
+
 @media screen and (max-width: 485px) {
   .card-flight {
-    gap: 10px;
+    /* gap: 10px; */
+    /* width: 50px;
+    height: 70px; */
   }
+
+
+  .card-hotel {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
 
   .card-flight > * {
     padding: 10px;
