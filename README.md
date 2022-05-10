@@ -9,6 +9,8 @@ Several APIs provide detailed data like a weather forecast for the next week, ch
 
 You can also sort the result based on your preferences, for example to see the shortest flight duration or the hotels closest to the city center first.
 
+<img src="./public/images/screenshot1.png" width="200" height="100">
+
 ## Features
 
 - Search once, get all results! Separate weather search optionally.
@@ -54,3 +56,9 @@ After that you can open your terminal, cd into the project directory and run the
 
 ## Development
 This project was created in a time span of one month as a part of [Wild Code School's](https://www.wildcodeschool.com/en-GB) web development bootcamp.
+
+## Possibilites for the future
+- Optimize the responsive layout for phones
+- Implement map API for hotels
+- Convert airline IATA codes to airline names with another API 
+- Create a 404 page/component if the API calls fail
