@@ -107,7 +107,7 @@
   
     .nav-links:hover {
       background-color: #fff;
-      color: ##5F939A;
+      color: #5F939A;
       border-radius: 0;
     }
   
@@ -154,5 +154,4 @@
       transition: 250ms;
     }
   }
-  
   
