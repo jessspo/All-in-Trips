@@ -146,6 +146,8 @@ input {
     margin-left: -30%;
     margin-right: -30%;
   }
+
+
 }
 
 
@@ -160,6 +162,11 @@ input {
   .card-hotel {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .weather-text {
+    margin-left: -10%;
+    margin-right: -10%;
   }
 
 
