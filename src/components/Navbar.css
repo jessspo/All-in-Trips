@@ -154,5 +154,9 @@
       transition: 250ms;
     }
   }
-  
-  
+
+  .logo {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+  }
