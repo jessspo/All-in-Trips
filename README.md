@@ -9,8 +9,6 @@ Several APIs provide detailed data like a weather forecast for the next week, ch
 
 You can also sort the result based on your preferences, for example to see the shortest flight duration or the hotels closest to the city center first.
 
-<img src="./public/images/screenshot1.png" width="600" height="400">
-
 ## Features
 
 - Search once, get all results! Separate weather search optionally.
@@ -22,6 +20,8 @@ You can also sort the result based on your preferences, for example to see the s
 ## Demo
 
 Live demo on Netlify: https://all-in-trips.netlify.app/
+
+<img src="./public/images/screenshot1.png" width="600" height="400">
 
 ## Installation
 If you want to run the code locally, you have to register on the websites of the API providers, listed below, and request your own API keys. Once you have them, replace the fake values inside the file **.env.sample** with your keys and rename the file into **.env**. 
