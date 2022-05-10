@@ -9,7 +9,7 @@ Several APIs provide detailed data like a weather forecast for the next week, ch
 
 You can also sort the result based on your preferences, for example to see the shortest flight duration or the hotels closest to the city center first.
 
-<img src="./public/images/screenshot1.png" width="200" height="100">
+<img src="./public/images/screenshot1.png" width="600" height="400">
 
 ## Features
 
