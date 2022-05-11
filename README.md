@@ -57,7 +57,7 @@ After that you can open your terminal, cd into the project directory and run the
 ## Development
 This project was created in a time span of one month as a part of [Wild Code School's](https://www.wildcodeschool.com/en-GB) web development bootcamp.
 
-## Possibilites for the future
+## Possibilities for the future
 - Optimize the responsive layout for phones
 - Implement map API for hotels
 - Convert airline IATA codes to airline names with another API 
